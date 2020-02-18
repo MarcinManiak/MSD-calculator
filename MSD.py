@@ -95,11 +95,12 @@ class MSD:
         print('---Calculating MSD in X direction---')
         try:
             self.msdX = self.__MSDforAllAtomsInSingleDirection(2, self.atoms)
+            print('---MSD calculated in X direction')
         except Exception as e:
             print(f'\n\n{e}')
             print(f'!Error - MSD not calculated in X direction')
 
-        print('---MSD calculated in X direction')
+
 
 
     def MSDY(self):
@@ -109,11 +110,12 @@ class MSD:
         print('---Calculating MSD in Y direction---')
         try:
             self.msdY = self.__MSDforAllAtomsInSingleDirection(3, self.atoms)
+            print('---MSD calculated in Y direction')
         except Exception as e:
             print(f'\n\n{e}')
             print(f'!Error - MSD not calculated in Y direction')
 
-        print('---MSD calculated in Y direction')
+
 
     def MSDZ(self):
         """
@@ -122,11 +124,12 @@ class MSD:
         print('---Calculating MSD in Z direction---')
         try:
             self.msdZ = self.__MSDforAllAtomsInSingleDirection(4, self.atoms)
+            print('---MSD calculated in Z direction')
         except Exception as e:
             print(f'\n\n{e}')
             print(f'!Error - MSD not calculated in Z direction')
 
-        print('---MSD calculated in Z direction')
+
 
     def MSD(self):
         """

@@ -31,8 +31,9 @@ msd.deleteTmp()
 """
 graph creating
 Grap(data, timestep in ps, title)
+fig.plot([data, 'legend'],[..],...)
 """
 
-fig1 = Graph(msd.msd, 0.01, 'MSD')
-fig1.plot()
+fig1 = Graph(0.01, 'MSD')
+fig1.plot([msd.msd, 'MSD total'],[msd.msdX, 'MSD X'],[msd.msdY, 'MSD Y'],[msd.msdZ, 'MSD Z'])
 
